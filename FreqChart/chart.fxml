@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Charter">
+   <items>
+      <BarChart fx:id="chart" title="Numbers sorted by tens place">
+        <xAxis>
+          <CategoryAxis fx:id="catAxis" label="Numbers by tens place" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="numAxis" label="Number of occurrances" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <TextField fx:id="input" onAction="#addToChart" promptText="Enter a number:" />
+   </items>
+</SplitPane>
